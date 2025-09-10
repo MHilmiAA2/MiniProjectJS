@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #changebg {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-transform: capitalize;
+            cursor: pointer;
+            background-color: lightblue;
+            border: none;
+            font-size: 1.2rem;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="btn">
+        <button id="changebg">Ubah Background</button>
+    </div>
+
+    <script>
+        let btnbg = document.getElementById("changebg");
+
+        btnbg.addEventListener("click", function() {
+            document.body.style.backgroundColor = randomColor();
+        });
+        function randomColor() {
+            let letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                const element = letters[Math.floor(Math.random() * 16)];
+                color += element;
+            }
+            return color;
+        };
+    </script>
+</body>
+</html>
