@@ -1,0 +1,35 @@
+input {
+    display: block;
+    padding: 0.5rem;
+    margin-block: 0.8rem;
+    font-size: large;
+    width: 95%;
+    border-radius: 0.4rem;
+}
+
+.operator {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.operator>button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background: rgb(220, 220, 220);
+}
+
+.operator>button:hover {
+    background: rgb(150, 150, 150);
+}
+
+.hasil {
+    display: flex;
+    justify-content: center;
+}
+
+.hasil>#hasil {
+    font-size: x-large;
+}
