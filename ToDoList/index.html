@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+        <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6 space-y-6">
+            <!-- Header -->
+            <div class="text-center">
+                <h1 class="text-2xl font-bold text-gray-800">📝 ToDo List</h1>
+                <p class="text-sm text-gray-500">Catat & kelola aktivitasmu</p>
+            </div>
+
+            <!-- Input -->
+            <div class="flex space-x-2">
+                <input type="text" id="inputTugas" placeholder="Tulis tugas baru..."
+                    class="flex-1 rounded-md border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 px-3 py-2 text-sm">
+                <button id="btnTambah" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+                    Tambah
+                </button>
+            </div>
+
+            <!-- Output -->
+            <div id="hasil" class="space-y-2">
+                <p id="output" class="text-gray-600 text-sm text-center">Belum ada tugas</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

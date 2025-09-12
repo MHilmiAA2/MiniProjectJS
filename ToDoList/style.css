@@ -1,0 +1,28 @@
+.card {
+    text-align: center;
+    padding-block: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(100, 100, 100, 0.2);
+}
+.card .isi input {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+}
+.card .isi button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.card .isi button:hover {
+    background-color: grey;
+    color: white;
+}
+#hasil {
+    margin-top: 1rem;
+}
