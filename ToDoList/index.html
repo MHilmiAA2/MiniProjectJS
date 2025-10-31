@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        button { padding: 10px; margin-left: 5px; }
+        li.done { text-decoration: line-through; color: gray; }
+    </style>
     <title>Document</title>
 </head>
 
@@ -13,7 +17,7 @@
         <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6 space-y-6">
             <!-- Header -->
             <div class="text-center">
-                <h1 class="text-2xl font-bold text-gray-800">📝 ToDo List</h1>
+                <h1 class="text-2xl font-bold text-gray-800">ToDo List</h1>
                 <p class="text-sm text-gray-500">Catat & kelola aktivitasmu</p>
             </div>
 
@@ -28,7 +32,8 @@
 
             <!-- Output -->
             <div id="hasil" class="space-y-2">
-                <p id="output" class="text-gray-600 text-sm text-center">Belum ada tugas</p>
+                <p class="text-gray-600 text-2xl font-semibold text-center py-2">List</p>
+                <ul id="output" class="p-3 mt-3"></ul>
             </div>
         </div>
     </main>
